@@ -4,6 +4,14 @@
 
 ![overview](./doc/teaser.png)
 
+```
+conda create -n swmp python=3.8
+conda activate swmp
+pip3 install torch==1.8.2 torchvision==0.9.2 torchaudio==0.8.2 --extra-index-url https://download.pytorch.org/whl/lts/1.8/cu111
+pip install -r requirements.txt
+```
+
+
 ## Introduction
 
 In this paper, we tackle the task of object kinematic motion prediction problem in a semi-weakly supervised manner. Our key observations are two-fold. First, although 3D dataset with fully annotated motion labels is limited, there are existing datasets and methods for object
